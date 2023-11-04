@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 60vh;
+            width: 80vw;
+            border: 1px black solid;
+            display: grid;
+            grid-template-columns: 35% 35% 30% ;
+            grid-template-rows: 50% 50%;
+            padding: 15px;
+            gap: 4px;
+            font-size: 200%;
+        }
+        .obj {
+            background-color: bisque;
+            display: inline-block;
+        }
+        .obj1 {
+            grid-column: 1/3;
+            grid-row-start: 1;
+        }
+        .obj2 {
+            grid-column-start: 3;
+            grid-row: 1 / 3;
+        }
+        .obj3 {
+            grid-column-start: 1 / 2;
+            grid-row-start: 2;
+        }
+        .obj4 {
+            grid-column-start: 2 / 3;
+            grid-row-start: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="obj obj1">A</div>
+        <div class="obj obj2">B</div>
+        <div class="obj obj3">C</div>
+        <div class="obj obj4">D</div>
+    </div>
+</body>
+</html>

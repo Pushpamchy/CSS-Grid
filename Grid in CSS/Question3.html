@@ -1,0 +1,67 @@
+In CSS Grid Layout, the properties grid-auto-rows and grid-auto-columns are used to define the size of implicitly created rows and columns when you have more grid items than you have explicitly defined rows and columns in your grid.
+
+Here's how they work with code examples:
+
+grid-auto-rows:
+
+grid-auto-rows property is used to specify the size of implicitly created rows in a grid. It accepts a value or a space-separated list of values. Let's consider an example where you have a grid container with explicitly defined columns, and you want implicitly created rows to be sized automatically: Uncomment to see the output and comment the above paragraph. In this example, any grid items that are placed in rows beyond the explicitly defined two columns will have a height of 50px each.
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px; /* Explicitly defined columns */
+        grid-auto-rows: 50px; /* Implicit rows will have a height of 50px */
+        background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+grid-auto-columns
+grid-auto-columns property is used to specify the size of implicitly created columns in a grid. Similar to grid-auto-rows, it accepts a value or a space-separated list of values. Let's consider an example where you have a grid container with explicitly defined rows, and you want implicitly created columns to be sized automatically.  Uncomment to see the output and comment the above paragraph. In this example, any grid items that are placed in columns beyond the explicitly defined two rows will have a width of 50px each.
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-rows: 100px 100px; /* Explicitly defined rows */
+        grid-auto-columns: 50px; /* Implicit columns will have a width of 50px */
+        background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html> -->

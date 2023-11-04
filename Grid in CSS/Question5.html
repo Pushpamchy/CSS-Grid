@@ -1,0 +1,89 @@
+<!-- In CSS Grid Layout, justify-items and justify-self are properties used to align grid items within grid containers. Here's how they differ:
+
+justify-items:
+justify-items property is used to align all the grid items inside the grid container along the inline (horizontal) axis. It applies to all the direct children of the grid container. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-items Example</title>
+  <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        justify-items: center;
+        grid-gap: 10px;
+        }
+
+    .grid-item {
+        width: 80px;
+        height: 80px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+  </div>
+</body>
+
+</html> -->
+
+
+<!-- In this example, all the grid items inside the container with class .grid-container will be horizontally centered within each grid cell. -->
+
+<!-- Justify-self property is used to align a specific grid item inside the grid container along the inline (horizontal) axis. It allows you to override the alignment set by justify-items for a particular grid item. -->
+<!-- In this example, the class .grid-item will be aligned to the end of its grid cell, regardless of the alignment set by justify-items on the grid container.
+
+To summarize, justify-items aligns all grid items inside the grid container, while justify-self allows you to align specific grid items individually within their respective grid cells. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-self Example</title>
+  <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-gap: 10px;
+        }
+
+    .grid-item {
+        width: 80px;
+        height: 80px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .custom-align {
+        justify-self: end;
+        }
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item custom-align">3 (Custom Aligned)</div>
+  </div>
+</body>
+
+</html>
